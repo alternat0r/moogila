@@ -1,0 +1,11 @@
+C:\Users\alternat0r\AppData\Local\Temporary Projects\moogila\bin\Debug\moogila.exe.config
+C:\Users\alternat0r\Documents\Visual Studio 2012\Projects\moogila\moogila\moogila\bin\Debug\moogila.exe.config
+C:\Users\alternat0r\Documents\Visual Studio 2012\Projects\moogila\moogila\moogila\bin\Debug\moogila.exe
+C:\Users\alternat0r\Documents\Visual Studio 2012\Projects\moogila\moogila\moogila\bin\Debug\moogila.pdb
+C:\Users\alternat0r\Documents\Visual Studio 2012\Projects\moogila\moogila\moogila\bin\Debug\moogila.xml
+C:\Users\alternat0r\Documents\Visual Studio 2012\Projects\moogila\moogila\moogila\obj\Debug\moogila.Resources.resources
+C:\Users\alternat0r\Documents\Visual Studio 2012\Projects\moogila\moogila\moogila\obj\Debug\moogila.vbproj.GenerateResource.Cache
+C:\Users\alternat0r\Documents\Visual Studio 2012\Projects\moogila\moogila\moogila\obj\Debug\moogila.exe
+C:\Users\alternat0r\Documents\Visual Studio 2012\Projects\moogila\moogila\moogila\obj\Debug\moogila.xml
+C:\Users\alternat0r\Documents\Visual Studio 2012\Projects\moogila\moogila\moogila\obj\Debug\moogila.pdb
+C:\Users\alternat0r\Documents\Visual Studio 2012\Projects\moogila\moogila\moogila\obj\Debug\moogila.frmMain.resources
