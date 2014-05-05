@@ -44,16 +44,17 @@ Partial Class frmMain
         Me.wb1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.wb1.Location = New System.Drawing.Point(2, 59)
+        Me.wb1.Location = New System.Drawing.Point(0, 57)
         Me.wb1.MinimumSize = New System.Drawing.Size(20, 20)
         Me.wb1.Name = "wb1"
-        Me.wb1.Size = New System.Drawing.Size(722, 343)
+        Me.wb1.Size = New System.Drawing.Size(722, 365)
         Me.wb1.TabIndex = 0
         '
         'btnGo
         '
+        Me.btnGo.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnGo.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnGo.Location = New System.Drawing.Point(675, 26)
+        Me.btnGo.Location = New System.Drawing.Point(676, 23)
         Me.btnGo.Name = "btnGo"
         Me.btnGo.Size = New System.Drawing.Size(37, 28)
         Me.btnGo.TabIndex = 1
@@ -62,8 +63,10 @@ Partial Class frmMain
         '
         'txtBrowser
         '
+        Me.txtBrowser.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtBrowser.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtBrowser.Location = New System.Drawing.Point(2, 27)
+        Me.txtBrowser.Location = New System.Drawing.Point(6, 24)
         Me.txtBrowser.Name = "txtBrowser"
         Me.txtBrowser.Size = New System.Drawing.Size(667, 27)
         Me.txtBrowser.TabIndex = 2
