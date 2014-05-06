@@ -8,15 +8,10 @@
         If e.KeyCode = Keys.Return Then
             Call navigate()
         End If
-
     End Sub
 
     Function navigate()
         wb1.Navigate(txtBrowser.Text)
-        Application.DoEvents()
-        System.Threading.Thread.Sleep(1024)
-        tc1.TabPages(tc1.SelectedIndex).Text = wb1.DocumentTitle
-        Me.Text = "Moogila - " & wb1.DocumentTitle
         Return Nothing
     End Function
 
@@ -27,4 +22,50 @@
     Private Sub AboutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AboutToolStripMenuItem.Click
         frmAbout.ShowDialog()
     End Sub
+
+    Private Sub wb1_DocumentCompleted(sender As Object, e As WebBrowserDocumentCompletedEventArgs) Handles wb1.DocumentCompleted
+        tc1.TabPages(tc1.SelectedIndex).Text = wb1.DocumentTitle
+        Me.Text = "Moogila - " & wb1.DocumentTitle
+        Dim iconURL = "http://" & wb1.Url.Host & "/favicon.ico"
+        Dim request As System.Net.WebRequest = System.Net.HttpWebRequest.Create(iconURL)
+        Dim response As System.Net.HttpWebResponse = request.GetResponse()
+        Dim stream As System.IO.Stream = response.GetResponseStream()
+        Dim favicon = Image.FromStream(stream)
+        If stream.WriteTimeout Then
+            'PictureBox1.Image = favicon
+        Else
+            'web_pic.Image =  <<RESOURCE>>
+        End If
+    End Sub
+
+    Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        cmb1.Items.Add("http://")
+        cmb1.Items.Add("https://")
+
+        cmb1.SelectedIndex = 0
+    End Sub
+
+    Private Sub txtBrowser_TextChanged(sender As Object, e As EventArgs) Handles txtBrowser.TextChanged
+
+    End Sub
+
+    Private Sub NewTabToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles NewTabToolStripMenuItem1.Click
+        Dim tabpage As New TabPage
+        tabpage.Text = "(empty)"
+
+        Dim wb1 As New WebBrowser
+        wb1.Parent = tabpage
+        wb1.Anchor = AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right Or AnchorStyles.Top
+
+        tc1.TabPages.Add(tabpage)
+    End Sub
+
+    Private Sub NewTabToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NewTabToolStripMenuItem.Click
+        NewTabToolStripMenuItem1_Click(sender, e)
+    End Sub
+
+    Private Sub wb1_StatusTextChanged(sender As Object, e As EventArgs) Handles wb1.StatusTextChanged
+        ToolStripStatusLabel1.Text = wb1.StatusText
+    End Sub
+
 End Class
