@@ -10,3 +10,4 @@ C:\Users\alternat0r\Documents\Visual Studio 2012\Projects\moogila\moogila\moogil
 C:\Users\alternat0r\Documents\Visual Studio 2012\Projects\moogila\moogila\moogila\obj\Debug\moogila.pdb
 C:\Users\alternat0r\Documents\Visual Studio 2012\Projects\moogila\moogila\moogila\obj\Debug\moogila.frmMain.resources
 C:\Users\alternat0r\Documents\Visual Studio 2012\Projects\moogila\moogila\moogila\obj\Debug\moogila.frmAbout.resources
+C:\Users\alternat0r\Documents\Visual Studio 2012\Projects\moogila\moogila\moogila\obj\Debug\moogila.frmSettings.resources

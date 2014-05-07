@@ -69,4 +69,8 @@
     Private Sub CloseTabToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CloseTabToolStripMenuItem.Click
         tc1.TabPages.Remove(tc1.SelectedTab)
     End Sub
+
+    Private Sub SettingsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SettingsToolStripMenuItem.Click
+        frmSettings.ShowDialog()
+    End Sub
 End Class

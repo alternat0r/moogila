@@ -27,6 +27,8 @@ Partial Class frmSettings
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.cmbDefaultSearch = New System.Windows.Forms.ComboBox()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -50,6 +52,8 @@ Partial Class frmSettings
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.cmbDefaultSearch)
+        Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.TextBox1)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Location = New System.Drawing.Point(12, 6)
@@ -75,6 +79,24 @@ Partial Class frmSettings
         Me.TextBox1.TabIndex = 1
         Me.TextBox1.Text = "www.duckduckgo.com"
         '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(14, 52)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(117, 13)
+        Me.Label2.TabIndex = 2
+        Me.Label2.Text = "Default Search Engine:"
+        '
+        'cmbDefaultSearch
+        '
+        Me.cmbDefaultSearch.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbDefaultSearch.FormattingEnabled = True
+        Me.cmbDefaultSearch.Location = New System.Drawing.Point(137, 52)
+        Me.cmbDefaultSearch.Name = "cmbDefaultSearch"
+        Me.cmbDefaultSearch.Size = New System.Drawing.Size(240, 21)
+        Me.cmbDefaultSearch.TabIndex = 3
+        '
         'frmSettings
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -98,4 +120,6 @@ Partial Class frmSettings
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents cmbDefaultSearch As System.Windows.Forms.ComboBox
+    Friend WithEvents Label2 As System.Windows.Forms.Label
 End Class

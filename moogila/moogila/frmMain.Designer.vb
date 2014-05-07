@@ -43,6 +43,7 @@ Partial Class frmMain
         Me.wb1 = New System.Windows.Forms.WebBrowser()
         Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
         Me.cmb1 = New System.Windows.Forms.ComboBox()
+        Me.SettingsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.StatusStrip1.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
         Me.tc1.SuspendLayout()
@@ -106,28 +107,29 @@ Partial Class frmMain
         'NewTabToolStripMenuItem
         '
         Me.NewTabToolStripMenuItem.Name = "NewTabToolStripMenuItem"
-        Me.NewTabToolStripMenuItem.Size = New System.Drawing.Size(124, 22)
+        Me.NewTabToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.NewTabToolStripMenuItem.Text = "New tab"
         '
         'OpenFileToolStripMenuItem
         '
         Me.OpenFileToolStripMenuItem.Name = "OpenFileToolStripMenuItem"
-        Me.OpenFileToolStripMenuItem.Size = New System.Drawing.Size(124, 22)
+        Me.OpenFileToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.OpenFileToolStripMenuItem.Text = "Open File"
         '
         'ToolStripSeparator1
         '
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(121, 6)
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(149, 6)
         '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(124, 22)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
         'ViewToolStripMenuItem
         '
+        Me.ViewToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SettingsToolStripMenuItem})
         Me.ViewToolStripMenuItem.Name = "ViewToolStripMenuItem"
         Me.ViewToolStripMenuItem.Size = New System.Drawing.Size(44, 20)
         Me.ViewToolStripMenuItem.Text = "View"
@@ -208,6 +210,12 @@ Partial Class frmMain
         Me.cmb1.Size = New System.Drawing.Size(82, 27)
         Me.cmb1.TabIndex = 7
         '
+        'SettingsToolStripMenuItem
+        '
+        Me.SettingsToolStripMenuItem.Name = "SettingsToolStripMenuItem"
+        Me.SettingsToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.SettingsToolStripMenuItem.Text = "Settings"
+        '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -254,5 +262,6 @@ Partial Class frmMain
     Friend WithEvents CloseTabToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ImageList1 As System.Windows.Forms.ImageList
     Friend WithEvents cmb1 As System.Windows.Forms.ComboBox
+    Friend WithEvents SettingsToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 
 End Class
