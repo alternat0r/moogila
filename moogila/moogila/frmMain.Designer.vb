@@ -54,7 +54,7 @@ Partial Class frmMain
         '
         Me.btnGo.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnGo.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnGo.Location = New System.Drawing.Point(684, 23)
+        Me.btnGo.Location = New System.Drawing.Point(682, 23)
         Me.btnGo.Name = "btnGo"
         Me.btnGo.Size = New System.Drawing.Size(37, 28)
         Me.btnGo.TabIndex = 1
@@ -70,7 +70,7 @@ Partial Class frmMain
         Me.txtBrowser.Name = "txtBrowser"
         Me.txtBrowser.Size = New System.Drawing.Size(586, 27)
         Me.txtBrowser.TabIndex = 2
-        Me.txtBrowser.Text = "www.google.com"
+        Me.txtBrowser.Text = "www.duckduckgo.com"
         '
         'StatusStrip1
         '
@@ -106,24 +106,24 @@ Partial Class frmMain
         'NewTabToolStripMenuItem
         '
         Me.NewTabToolStripMenuItem.Name = "NewTabToolStripMenuItem"
-        Me.NewTabToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.NewTabToolStripMenuItem.Size = New System.Drawing.Size(124, 22)
         Me.NewTabToolStripMenuItem.Text = "New tab"
         '
         'OpenFileToolStripMenuItem
         '
         Me.OpenFileToolStripMenuItem.Name = "OpenFileToolStripMenuItem"
-        Me.OpenFileToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.OpenFileToolStripMenuItem.Size = New System.Drawing.Size(124, 22)
         Me.OpenFileToolStripMenuItem.Text = "Open File"
         '
         'ToolStripSeparator1
         '
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(149, 6)
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(121, 6)
         '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(124, 22)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
         'ViewToolStripMenuItem

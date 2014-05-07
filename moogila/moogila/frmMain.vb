@@ -12,6 +12,7 @@
 
     Function navigate()
         wb1.Navigate(txtBrowser.Text)
+
         Return Nothing
     End Function
 
@@ -45,17 +46,14 @@
         cmb1.SelectedIndex = 0
     End Sub
 
-    Private Sub txtBrowser_TextChanged(sender As Object, e As EventArgs) Handles txtBrowser.TextChanged
-
-    End Sub
-
+    '/* generate new object everytime user create new tab */
     Private Sub NewTabToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles NewTabToolStripMenuItem1.Click
         Dim tabpage As New TabPage
         tabpage.Text = "(empty)"
 
-        Dim wb1 As New WebBrowser
-        wb1.Parent = tabpage
-        wb1.Anchor = AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right Or AnchorStyles.Top
+        Dim web1 As New WebBrowser
+        web1.Parent = tabpage
+        web1.Anchor = AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right Or AnchorStyles.Top
 
         tc1.TabPages.Add(tabpage)
     End Sub
@@ -68,4 +66,7 @@
         ToolStripStatusLabel1.Text = wb1.StatusText
     End Sub
 
+    Private Sub CloseTabToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CloseTabToolStripMenuItem.Click
+        tc1.TabPages.Remove(tc1.SelectedTab)
+    End Sub
 End Class
