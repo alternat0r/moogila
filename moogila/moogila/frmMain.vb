@@ -44,6 +44,8 @@
         cmb1.Items.Add("https://")
 
         cmb1.SelectedIndex = 0
+
+        txtBrowser.Text = My.Settings.setDefaultURL
     End Sub
 
     '/* generate new object everytime user create new tab */
