@@ -65,6 +65,18 @@ Namespace My
                 Me("setDefaultURL") = value
             End Set
         End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("http://www.google.com")>  _
+        Public Property setDefaultSearch() As String
+            Get
+                Return CType(Me("setDefaultSearch"),String)
+            End Get
+            Set
+                Me("setDefaultSearch") = value
+            End Set
+        End Property
     End Class
 End Namespace
 

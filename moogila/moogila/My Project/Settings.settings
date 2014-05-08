@@ -5,5 +5,8 @@
     <Setting Name="setDefaultURL" Type="System.String" Scope="User">
       <Value Profile="(Default)">http://www.duckduckgo.com</Value>
     </Setting>
+    <Setting Name="setDefaultSearch" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://www.google.com</Value>
+    </Setting>
   </Settings>
 </SettingsFile>
